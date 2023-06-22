@@ -6,6 +6,7 @@
   --color: #00333e;
 }
 
+
 .mobile {
   max-height: 100vh;
 
@@ -118,6 +119,124 @@
 
 .not-mobile {
   display: none;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 360px) {
+  .mobile {
+    max-height: 100vh;
+
+
+    .bottom-nav {
+      background-color: var(--background);
+      border-radius: 25px;
+      padding: 10px 0;
+      margin-top: 10px;
+    }
+
+    .mobile-navbar {
+      background-color: var(--color);
+      padding: 10px 0 10px 20px;
+      color: white;
+
+      .sidebar-toggler {
+        //background-color: var(--background);
+      }
+
+      .mobile-home-icon {
+        color: white;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+      }
+
+      .mobile-navbar-text {
+        color: white;
+        padding: 5px;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        width: 100%;
+
+        .mobile-message-text {
+          font-size: 14px;
+        }
+      }
+
+    }
+
+    .mobile-content {
+      min-height: calc(100vh - 180px);
+      max-height: calc(100vh - 180px);
+    }
+
+    .home {
+      background-color: var(--background);
+      overflow: scroll;
+      max-height: calc(100vh - 125px);
+
+      .home-box {
+        box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
+      }
+
+      .home-dummy-box {
+        border: 1px solid white;
+        border-radius: 25px;
+        color: white;
+        min-height: 30vh;
+        margin: 5vw 5vw;
+      }
+
+
+      .home-post-box {
+        border: 1px solid white;
+        border-radius: 25px;
+        color: white;
+        min-height: 30vh;
+        margin: 1vw 5vw 2vh;
+
+        img {
+          width: 30px;
+          height: 30px;
+          margin-right: 5px;
+        }
+      }
+
+      .home-input-box {
+        border: 1px solid white;
+        margin: 5vw;
+        border-radius: 25px;
+        color: white;
+
+        button {
+          color: white;
+          background-color: var(--button);
+          border-radius: 25px;
+        }
+
+        textarea {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          color: white;
+
+          &::placeholder {
+            color: white;
+          }
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .not-mobile {
+    display: none;
+  }
+
+
 }
 
 
