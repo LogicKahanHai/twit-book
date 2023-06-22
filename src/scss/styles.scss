@@ -55,6 +55,7 @@
   .home {
     background-color: var(--background);
     overflow: scroll;
+    max-height: calc(100vh - 180px);
 
     .home-box {
       box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.5);
@@ -65,7 +66,7 @@
       border-radius: 25px;
       color: white;
       min-height: 30vh;
-      margin: 5vw 5vw 10vh;
+      margin: 5vw 5vw;
     }
 
 
